@@ -1,0 +1,32 @@
+/* Null Styles */
+@import url(NULLstyle.css);
+/* STYLES HEADER */
+@import url(header.css);
+/* ------------------------- */
+/* STYLES MAIN */
+@import url(main.css);
+/* ------------------------- */
+/* STYLES FOOTER */
+@import url(footer.css);
+/* ------------------------- */
+body {
+	background: #0d0d11;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1280px;
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+.page {
+	flex: 1;
+}
+@media (max-width: 474px) {
+	.wrapper {
+		max-width: 100%;
+		margin: 0 10px;
+	}
+}

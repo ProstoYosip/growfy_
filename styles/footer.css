@@ -1,0 +1,231 @@
+footer {
+	/* position: fixed;
+	left: 0;
+	bottom: 0; */
+	width: 100%;
+	height: 773px;
+}
+.footer__conteiner {
+	margin: 160px 0;
+	height: 773px;
+}
+.footer__content {
+	display: flex;
+}
+.footer__box1-box2 {
+	display: flex;
+}
+.footer__box3-box4 {
+	display: flex;
+}
+.footer__box1 {
+	max-width: 33.33%;
+	margin-right: 64px;
+}
+.box1__text {
+	font-family: "Poppins";
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 24px;
+	align-items: center;
+	color: #9c9c9c;
+	padding: 32px 32px 32px 0;
+}
+.box1__icons a:not(:last-child) {
+	padding-right: 16px;
+}
+.box1__icons a img {
+	border-radius: 50%;
+	background-color: #0d0d11;
+	transition: background-color 0.3s ease 0s;
+}
+.box1__icons a img:hover {
+	background-color: #ffffff;
+}
+.footer__box2 {
+	max-width: 16.66%;
+	margin-right: 64px;
+}
+.box2__title {
+	font-family: "Poppins";
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	align-items: center;
+	letter-spacing: 1px;
+	color: #ffffff;
+	margin-bottom: 30px;
+}
+.box2__pages {
+	display: flex;
+	flex-direction: column;
+}
+.box2__pages a {
+	font-family: "Poppins";
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 26px;
+	align-items: center;
+	color: #9c9c9c;
+	transition: color 0.3s ease 0s;
+	padding-bottom: 25px;
+}
+.box2__pages a:hover {
+	color: #ffffff;
+}
+
+.footer__box3 {
+	max-width: 16.66%;
+	margin-right: 64px;
+}
+.box3__pages {
+	display: flex;
+	flex-direction: column;
+}
+.box3__title {
+	font-family: "Poppins";
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	align-items: center;
+	letter-spacing: 1px;
+	color: #ffffff;
+	margin-bottom: 30px;
+}
+.box3__pages a {
+	font-family: "Poppins";
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 26px;
+	align-items: center;
+	color: #9c9c9c;
+	transition: color 0.3s ease 0s;
+	padding-bottom: 25px;
+}
+
+.box3__pages a:hover {
+	color: #ffffff;
+}
+.footer__box4 {
+	max-width: 33.33%;
+}
+.box4__title {
+	font-family: "Poppins";
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	align-items: center;
+	letter-spacing: 1px;
+	color: #ffffff;
+	margin-bottom: 30px;
+}
+.box4__text {
+	font-family: "Poppins";
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 24px;
+	align-items: center;
+	color: #9c9c9c;
+	margin-bottom: 33px;
+	max-width: 301.2px;
+}
+.box4__button {
+	display: flex;
+}
+.box4__button input {
+	box-sizing: border-box;
+	border: 1px solid rgba(129, 129, 139, 0.3);
+	border-radius: 50px;
+	background: #0d0d11;
+	text-align: center;
+	width: 224.77px;
+	height: 54px;
+	font-family: "Poppins";
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	align-items: center;
+	color: #999999;
+	transition: border 0.3s ease 0s, color 0.3s ease 0s;
+}
+.box4__button input:hover {
+	border: 1px solid rgba(253, 253, 255, 0.797);
+	color: #eaeaea;
+}
+.box4__button input:focus {
+	border: 1px solid rgba(253, 253, 255, 0.797);
+	background: #383841;
+}
+.box4__button button {
+	margin-left: 15px;
+	width: 136.32px;
+	height: 52px;
+	background: #3d96f4;
+	border-radius: 50px;
+	font-family: "Poppins";
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 22px;
+	text-align: center;
+	letter-spacing: 2px;
+	color: #ffffff;
+	transition: background-color 0.3s ease 0s;
+}
+.box4__button button:hover {
+	background-color: #1f68b6;
+}
+.footer__year {
+	height: 112.59px;
+	margin-top: 160px;
+	font-family: "Poppins";
+	font-weight: 300;
+	line-height: 22px;
+	align-items: center;
+	text-align: center;
+	color: #9c9c9c;
+	border-top: 1px solid rgba(129, 129, 139, 0.2);
+}
+@media (max-width: 967px) {
+	.footer__content {
+		flex-wrap: wrap;
+	}
+	.footer__box1 {
+		width: 50%;
+	}
+	.footer__box2 {
+		width: 50%;
+	}
+	.footer__box3 {
+		width: 50%;
+	}
+	.footer__box4 {
+		width: 50%;
+	}
+	.footer__box4 {
+		display: flex;
+	}
+	.box4__title,
+	.box4__text {
+		padding-right: 30px;
+	}
+	.box1__icons a:not(:last-child) {
+		padding-right: 5px;
+	}
+}
+@media (max-width: 670px) {
+	.box1__icons {
+		display: none;
+	}
+	.box4__button {
+		display: flex;
+		flex-direction: column;
+	}
+	.box4__button button {
+		margin-top: 10px;
+	}
+}
+@media (max-width: 600px) {
+	footer {
+		display: none;
+	}
+}

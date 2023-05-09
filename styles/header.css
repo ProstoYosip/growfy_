@@ -1,0 +1,132 @@
+/* ICON */
+.fa-solid,
+.fa-bars {
+	display: none;
+}
+/* ------------------- */
+.header {
+	width: 100%;
+	height: 116px;
+}
+.header__content {
+	margin: 32px 0;
+}
+.header__logo {
+	float: left;
+	padding-top: 10px;
+}
+.header__menu {
+	float: right;
+	display: flex;
+}
+.list__items {
+	display: flex;
+}
+.list__item {
+	padding-top: 15px;
+	align-items: center;
+	font-family: "Poppins";
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 26px;
+	color: #ffffff;
+	transition: font-size 0.3s ease 0s, color 0.3s ease 0s;
+}
+.list__item:hover {
+	font-size: 17px;
+	color: #bbbbbb;
+}
+.active {
+	font-size: 17px;
+	color: #bbbbbb;
+}
+.list__item:not(:last-child) {
+	padding-right: 36px;
+}
+
+.header__menu-cart {
+	padding-top: 15px;
+	padding-left: 30px;
+	font-family: "Poppins";
+	font-weight: 300;
+	font-size: 17.6px;
+	line-height: 28px;
+	align-items: center;
+	letter-spacing: 0.96px;
+	background: url(../img/header/icon__card.png) right no-repeat;
+	transition: font-size 0.3s ease 0s;
+}
+.header__menu-cart:hover {
+	font-size: 18.7px;
+}
+.cart__text {
+	padding-right: 35px;
+	color: #ffffff;
+	transition: color 0.3s ease 0s;
+}
+.cart__text:hover {
+	color: #bbbbbb;
+}
+.header__menu-button {
+	padding-left: 32px;
+}
+.header__button {
+	background-color: #3d96f4;
+	border-radius: 50px;
+	height: 52px;
+	width: 160px;
+	font-family: "Poppins";
+	font-weight: 500;
+	line-height: 22px;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 2px;
+	color: #ffffff;
+	transition: background-color 0.3s ease 0s;
+}
+.header__button:hover {
+	background-color: #1f68b6;
+}
+/* RESPONSIVE */
+@media (max-width: 1250px) {
+	.header__content {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+	}
+}
+@media (max-width: 786px) {
+	.fa-solid,
+	.fa-bars {
+		display: block;
+	}
+	.header__content {
+		margin: 32px 10px;
+	}
+	.list__items {
+		flex-direction: column;
+		padding-top: 17px;
+		padding-left: 10px;
+		font-size: 30px;
+		color: #ffffff;
+	}
+	.list__item:not(:last-child) {
+		padding-right: 0;
+	}
+	.header__logo {
+		padding-bottom: 10px;
+	}
+	.list__item {
+		display: none;
+	}
+	.header__menu-button {
+		padding-left: 10px;
+		float: right;
+	}
+	.header__menu-cart {
+		float: right;
+		padding-left: 50px;
+		background: none;
+	}
+}
