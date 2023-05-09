@@ -21,8 +21,13 @@
 }
 .list__items {
 	display: flex;
+	z-index: 50;
+}
+.list__item a {
+	z-index: 50;
 }
 .list__item {
+	z-index: 50;
 	padding-top: 15px;
 	align-items: center;
 	font-family: "Poppins";
