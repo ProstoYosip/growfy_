@@ -3,7 +3,7 @@
 // 		$(".list__item").fadeToggle();
 // });
 // } else{}
-$(".list__items").click(function(){
+$("i").click(function(){
 	if($(".list__item").css("display") === "none"){
 		$(".list__item").fadeIn();
 	} else{
